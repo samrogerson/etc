@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# 01sshclean: wakeup: clean ssh shared connections
+case $1 in
+    hibernate|suspend)
+        rm /tmp/ssh_mux_*
+        ;;
+    thaw|resume)
+        ;;
+    *)  exit $NA
+        ;;
+esac

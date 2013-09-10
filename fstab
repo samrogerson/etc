@@ -1,0 +1,18 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda1
+UUID=6c7bed92-bb0c-4361-82f1-c9a82dc874bb	/         	btrfs     	rw,relatime,ssd,space_cache	0 0
+
+# /dev/sda2
+/dev/sda2           	/home     	btrfs     	rw,relatime,ssd,space_cache	0 0
+
+# /dev/sdb1
+UUID=5526DAC51A3C5AB2  /mnt/storage     ntfs-3g     	defaults,umask=0022,uid=hyper	0 0
+
+# /dev/sdc1
+UUID=C8EC26A9EC2691AC  /mnt/dvds        ntfs-3g     	defaults,umask=0022,uid=hyper	0 0
+
+# /dev/sdd1
+UUID=70BE18D3BE1893A6  /mnt/other       ntfs-3g     	defaults,umask=0022,uid=hyper	0 0
